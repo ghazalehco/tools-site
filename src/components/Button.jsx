@@ -6,11 +6,11 @@ class Button extends Component {
     };
 
     buttonAlert = () => {
-        alert("Hello World");
+        console.log(this.state.name);
     }
     render() {
         return (
-            <button type="button" onClick={this.buttonAlert}>
+            <button className="btn btn-sm btn-warning" onClick={this.buttonAlert}>
                 {this.state.name}
             </button >
         )

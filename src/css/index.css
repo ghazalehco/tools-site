@@ -1,0 +1,52 @@
+body {
+	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+		'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+		sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	background-color: #565F6E;
+}
+
+code {
+	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+		monospace;
+}
+
+.buttonpad{
+	display: grid;
+	grid-gap: 10px;
+	grid-template-columns: 45px 45px 45px 45px;
+	grid-template-rows: repeat(4, 40px);
+	grid-area: buttonpad;
+}
+
+.header{
+	grid-area: header;
+}
+
+.input{
+	grid-area: input;
+}
+
+.output{
+	grid-area: output;
+}
+
+.history{
+	grid-area: history;
+}
+
+.calculator{
+	margin-left: 20px;
+	margin-top: 20px;
+	display: grid;
+	grid-gap: 20px;
+	/* grid-template-rows: 20% 200px auto */
+	grid-template-areas:
+		"header header header header"
+		"input buttonpad buttonpad buttonpad"
+		"output buttonpad buttonpad buttonpad"
+		"history history history ."
+}
+
